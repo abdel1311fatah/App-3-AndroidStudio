@@ -1,3 +1,5 @@
+//Abel Ibarra
+
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,9 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
     private EditText n;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
         } catch (NumberFormatException e) { // Per si fiques caracters no valids, en aquest cas deixar en blanc
             n.setHint("Introdueix un numero valid"); // fiquem un setHint en lloc de un setText per que si no el programa pille letres
         }
+    }
+
+    public void reset(View dibuix){
+
+        n.clearComposingText();
+        n.setText(0);
+
     }
 
 }
