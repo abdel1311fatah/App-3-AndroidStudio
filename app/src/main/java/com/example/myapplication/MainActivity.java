@@ -53,8 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void reset(View dibuix){
 
-        n.clearComposingText();
-        n.setText(0);
+        n.setText("0");
 
     }
 
